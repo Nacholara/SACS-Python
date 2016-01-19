@@ -6,7 +6,7 @@ Created on Jan 7, 2016
 import json
 import requests
 import base64
-import com.sabre.api.des.config.Configuration as conf
+import com.sabre.api.sacs.config.Configuration as conf
 
 class AuthenticationCall:
     

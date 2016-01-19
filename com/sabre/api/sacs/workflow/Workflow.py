@@ -3,7 +3,7 @@ Created on Jan 10, 2016
 
 @author: SG0946321
 '''
-from com.sabre.api.des.workflow.SharedContext import SharedContext
+from com.sabre.api.sacs.workflow.SharedContext import SharedContext
 
 class Workflow:
     

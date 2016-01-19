@@ -3,9 +3,9 @@ Created on Jan 10, 2016
 
 @author: SG0946321
 '''
-from com.sabre.api.des.workflow.Activity import Activity
-from com.sabre.api.des.rest.activities.BargainFinderMaxActivity import BargainFinderMaxActivity
-from com.sabre.api.des.rest.BaseRestCall import BaseRestGetCall
+from com.sabre.api.sacs.workflow.Activity import Activity
+from com.sabre.api.sacs.rest.activities.BargainFinderMaxActivity import BargainFinderMaxActivity
+from com.sabre.api.sacs.rest.BaseRestCall import BaseRestGetCall
 import json
 
 class InstaFlightActivity(Activity):

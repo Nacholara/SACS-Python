@@ -5,7 +5,7 @@ Created on Jan 7, 2016
 '''
 
 import requests
-from com.sabre.api.des.rest.TokenHolder import TokenHolder
+from com.sabre.api.sacs.rest.TokenHolder import TokenHolder
 
 class BaseRestGetCall:
 

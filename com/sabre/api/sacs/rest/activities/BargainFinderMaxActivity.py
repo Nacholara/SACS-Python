@@ -3,9 +3,9 @@ Created on Jan 10, 2016
 
 @author: SG0946321
 '''
-from com.sabre.api.des.workflow.Activity import Activity
-from com.sabre.api.des.rest.BaseRestCall import BaseRestPostCall
-import com.sabre.api.des.config.Configuration as conf
+from com.sabre.api.sacs.workflow.Activity import Activity
+from com.sabre.api.sacs.rest.BaseRestCall import BaseRestPostCall
+import com.sabre.api.sacs.config.Configuration as conf
 
 class BargainFinderMaxActivity(Activity):
     

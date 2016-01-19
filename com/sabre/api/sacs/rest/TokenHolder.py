@@ -3,7 +3,7 @@ Created on Jan 7, 2016
 
 @author: SG0946321
 '''
-from com.sabre.api.des.rest.AuthenticationCall import AuthenticationCall
+from com.sabre.api.sacs.rest.AuthenticationCall import AuthenticationCall
 from datetime import datetime, timedelta
 
 class TokenHolder:
