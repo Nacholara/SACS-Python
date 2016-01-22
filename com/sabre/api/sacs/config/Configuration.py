@@ -14,7 +14,7 @@ class Configuration:
         self.rest = {}
         self.encKey = "pqfudkeiurodlpsk" # 16-bytes key
 
-        with open('../config/rest.properties') as f:
+        with open('../config/SACSConfig.properties') as f:
 
             for line in f:
                 if separator in line and line[0] != comment:

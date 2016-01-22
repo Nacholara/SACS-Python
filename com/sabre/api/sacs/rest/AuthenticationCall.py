@@ -16,7 +16,7 @@ class AuthenticationCall:
             'Authorization' : "Basic " + self.buildCredentials(),
             'Accept' : '*/*'
         }
-        response = requests.post(config.getProperty("endpoint") + "/v2/auth/token", headers=headers, data={"grant_type" : "client_credentials"})
+        response = requests.post(config.getProperty("environment") + "/v2/auth/token", headers=headers, data={"grant_type" : "client_credentials"})
         return json.loads(response.text)
     
     def buildCredentials(self):

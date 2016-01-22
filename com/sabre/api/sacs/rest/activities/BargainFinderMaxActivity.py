@@ -12,7 +12,7 @@ class BargainFinderMaxActivity(Activity):
     def runActivity(self, sharedContext):
         print("BargainFinderMax")
         config = conf.Configuration()
-        response = BaseRestPostCall(config.getProperty("endpoint") + "/v1.9.2/shop/flights?mode=live", self.createRequest()).executeCall()
+        response = BaseRestPostCall(config.getProperty("environment") + "/v1.9.2/shop/flights?mode=live", self.createRequest()).executeCall()
         sharedContext.bargainFinderMaxResult = response
         return None
     

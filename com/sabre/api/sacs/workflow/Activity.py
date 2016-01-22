@@ -9,4 +9,4 @@ class Activity:
     
     @abstractmethod
     def runActivity(self, sharedContext):
-        print("activity")
+        print("Implement me!")

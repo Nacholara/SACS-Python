@@ -19,6 +19,6 @@ class LeadPriceCalendarActivity(Activity):
             'lengthofstay' : 5,
             'pointofsalecountry' : 'US'
         }
-        response = BaseRestGetCall(config.getProperty("endpoint") + "/v2/shop/flights/fares", requestObject).executeCall() 
+        response = BaseRestGetCall(config.getProperty("environment") + "/v2/shop/flights/fares", requestObject).executeCall() 
         sharedContext.leadPriceCalendarResult = response
         return InstaFlightActivity()
