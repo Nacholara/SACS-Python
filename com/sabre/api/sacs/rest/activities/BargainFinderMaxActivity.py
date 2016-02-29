@@ -12,11 +12,11 @@ class BargainFinderMaxActivity(Activity):
     def runActivity(self, sharedContext):
         print("BargainFinderMax")
         config = conf.Configuration()
-        response = BaseRestPostCall(config.getProperty("environment") + "/v1.9.2/shop/flights?mode=live", self.createRequest()).executeCall()
+        response = BaseRestPostCall(config.getProperty("environment") + "/v1.9.2/shop/flights?mode=live", self.createRequest(sharedContext)).executeCall()
         sharedContext.bargainFinderMaxResult = response
         return None
     
-    def createRequest(self):
+    def createRequest(self, sharedContext):
         return {
             "OTA_AirLowFareSearchRQ": {
                 "Target": "Production",
@@ -31,12 +31,12 @@ class BargainFinderMaxActivity(Activity):
                     },
                     "OriginDestinationInformation": [{
                         "RPH": "1",
-                        "DepartureDateTime": "2016-04-01T11:00:00",
+                        "DepartureDateTime": sharedContext.departureDate+"T11:00:00",
                         "OriginLocation": {
-                            "LocationCode": "JFK"
+                            "LocationCode": sharedContext.origin
                         },
                         "DestinationLocation": {
-                            "LocationCode": "LAX"
+                            "LocationCode": sharedContext.destination
                         },
                         "TPA_Extensions": {
                             "SegmentType": {

@@ -5,10 +5,8 @@ Created on Nov 27, 2015
 '''
 from com.sabre.api.sacs.rest.activities.LeadPriceCalendarActivity import LeadPriceCalendarActivity
 from com.sabre.api.sacs.workflow.Workflow import Workflow
-from com.sabre.api.sacs.rest.activities.MCT import MCT
 
-workflow = Workflow(LeadPriceCalendarActivity())
-# workflow = Workflow(MCT())
+workflow = Workflow(LeadPriceCalendarActivity("LAX", "JFK", "2016-03-03"))
 sharedContext = workflow.runWorkflow()
 print("---------------------- RESULTS --------------------------")
 print(sharedContext.leadPriceCalendarResult.text)
