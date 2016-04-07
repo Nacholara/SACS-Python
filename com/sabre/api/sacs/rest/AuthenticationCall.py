@@ -25,7 +25,7 @@ class AuthenticationCall:
             config.getProperty("userId") + ":" + \
             config.getProperty("group") + ":" + \
             config.getProperty("domain")
-        secret = self.b64(config.getProperty("secret"))
+        secret = self.b64(config.getProperty("clientSecret"))
         return self.b64(self.b64(credentials) + ":" + secret)
             
     def b64(self, toEncode):
