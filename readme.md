@@ -3,7 +3,7 @@
 The Sabre API Code Samples for Python project’s purpose is to provide the reference code and enable quick and easy start to consuming Sabre Webservices. It focuses on business case usage, so it shows how to chain several REST calls into a workflow, where the subsequent call uses the previous one’s result. Its structure is designed to easily reuse parts of the classes, whole classes, modules or even whole project in client’s applications.
 
 ## Configuring the application
-The configuration is located in *SACSConfig.properties* file. It keeps the properties which are needed to connect and authenticate to the Sabre’s REST webservices. They are being read by the Configuration class, which contains 2 methods:
+The configuration is located in *SACSConfig.properties* file placed in *com.sabre.api.sacs.config* package. It keeps the properties which are needed to connect and authenticate to the Sabre’s REST webservices. They are being read by the Configuration class, which contains 2 methods:
 
 - *getProperty()* – it reads the value of the property which is not encrypted.
 - *getEncryptedProperty()* – reads and decrypts the encrypted property.
